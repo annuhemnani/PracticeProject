@@ -5,20 +5,13 @@
     <classes>
       <class name="academy.practiceproject.MainPage">
         <methods>
-          <include name="selectBenz"/>
-          <include name="selectBMWRadionButton"/>
-          <include name="selectHondaRadionButton"/>
-          <include name="dropdownText"/>
-          <include name="selectBenzRadionButton"/>
-          <include name="pageTitleVerifyTest"/>
-          <include name="countRadioButtonNumber"/>
-          <include name="dropDownOptions"/>
-          <include name="selectBmw"/>
           <include name="beforeTest"/>
           <include name="verifyUrl"/>
-          <include name="selecthonda"/>
-          <include name="byDefaultSelectedRadioButton"/>
+          <include name="zcloseOpenedTab"/>
+          <include name="close"/>
           <include name="verifyRadioButtonLabels"/>
+          <include name="swithWindowExample"/>
+          <include name="uncheckAllCheckbox"/>
         </methods>
       </class> <!-- academy.practiceproject.MainPage -->
     </classes>

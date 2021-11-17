@@ -25,11 +25,15 @@ public class MainclassObject {
 	By radiobuttonsTotal= By.cssSelector("input[type='radio']");
 	By dropdown=By.cssSelector("#carselect");
 	By multiSelectDropdown= By.cssSelector("#multiple-select-example");
-	By checkboxCount= By.cssSelector("input[type='checkbox']");
+	By checkboxCount= By.xpath("//div[@id='checkbox-example-div']/fieldset/label//input[@type='checkbox']");
 	By bmwcheckbox=By.cssSelector("#bmwcheck");
 	By benzcheckbox=By.cssSelector("#benzcheck");
 	By hondacheckbox=By.cssSelector("#hondacheck");
-
+	By openWindow= By.cssSelector("#openwindow");
+	By openTab= By.cssSelector("a#opentab");
+	By enterName=By.cssSelector("input[name='enter-name']");
+	By alertButton=By.cssSelector("#alertbtn");
+	By mouseHover= By.cssSelector("#mousehover");
 	
 	public WebElement getbenzradiobutton() {
 		return driver.findElement(benzRadioButton);
@@ -52,7 +56,7 @@ public class MainclassObject {
 		Select s= new Select(driver.findElement(dropdown));
 		return s;
 	}
-	public Select multipleSelectDropdown() {
+	public Select getmultipleSelectDropdown() {
 		Select multi=new Select(driver.findElement(multiSelectDropdown));
 		return multi;
 	}
@@ -78,6 +82,21 @@ public class MainclassObject {
 	}
 	public WebElement getHondaCheckbox() {
 		return driver.findElement(hondacheckbox);
+	}
+	public WebElement getOpenWindow() {
+		return driver.findElement(openWindow);
+	}
+	public WebElement getopentab() {
+		return driver.findElement(openTab);
+	}
+	public WebElement enterName() {
+		return driver.findElement(enterName);
+	}
+	public WebElement getalertButton() {
+		return driver.findElement(alertButton);
+	}
+	public WebElement mouseHover() {
+		return driver.findElement(mouseHover);
 	}
 	
 	
